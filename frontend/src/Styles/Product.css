@@ -1,0 +1,92 @@
+
+
+.heading-section h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #b80818;
+
+	margin: 0px;
+}
+.heading-section h2 {
+	text-align: center;
+	color: black;
+	font-size: 44px;
+	margin-bottom: 0px;
+	font-weight: bold;
+
+
+	letter-spacing: 0.5px;
+	word-spacing: 1px;
+}
+.heading-borders {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+.heading-borders span {
+	border: 1px solid red;
+	width: 5%;
+	margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+	.heading-section h2 {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	.heading-borders span {
+		width: 8%;
+	}
+}
+@media screen and (max-width:500px) {
+	.heading-borders span {
+		width: 25%;
+	}
+	.heading-section h2 {
+		font-size: 30px;
+	}
+}
+
+.famous-product {
+	border: 1px solid lightgrey;
+	padding: 20px;
+	border-radius: 30px;
+	background: #fff;
+	color: black;
+	margin-bottom: 30px;
+}
+.famous-product img {
+	width: 100%;
+    height: 200px;
+}
+.famous-product h2 {
+	font-size: 18px;
+	color: #F44336;
+}
+.famous-product h3 {
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 600;
+	color: #4e4e4e;
+}
+.famous-product .price {
+	position: relative;
+}
+.famous-product .price h4 {
+	margin: 0px;
+}
+.famous-product .price span {
+	position: absolute;
+	top: 5px;
+	right: 0px;
+}
+.famous-product .price .icon {
+	width: 20px;
+	height: 20px;
+	border: 1px solid;
+	font-size: 22px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 50px;
+	color: tomato;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.image{
+    animation: rotates 0.8s linear infinite alternate;
+}
+
+@keyframes rotates {
+  from {
+    transform: translateY(-0.7rem);
+  }
+  to {
+    transform: translateY(0.7rem);
+  }
+}

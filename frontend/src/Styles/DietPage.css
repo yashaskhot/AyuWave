@@ -1,0 +1,109 @@
+/* DietPage.css */
+
+  /* Container Styling */
+  .max-w-md {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Header Tabs */
+  .flex.border-b {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  button {
+    transition: color 0.3s ease;
+  }
+  
+  button:hover {
+    color: #0284c7;
+  }
+  
+  .text-sky-600 {
+    color: #0284c7;
+  }
+  
+  /* Meal Plan Card */
+  .flex.items-center.bg-white {
+    background: linear-gradient(145deg, #f7fafc, #e2e8f0);
+    border: 1px solid #e2e8f0;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .flex.items-center.bg-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .flex.items-center.bg-white img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #e0f2fe;
+  }
+  
+  .font-medium.text-gray-800 {
+    font-size: 1.1rem;
+    color: #334155;
+  }
+  
+  .text-gray-500 {
+    color: #64748b;
+  }
+  
+  /* Chevron Icon */
+  .w-5.h-5.text-gray-400 {
+    color: #94a3b8;
+  }
+  
+  /* Nutrition Facts Card */
+  .bg-white.rounded-xl.p-6.shadow-sm {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  
+  .text-xl.font-semibold.text-gray-800 {
+    color: #0f172a;
+  }
+  
+  .capitalize.text-gray-700 {
+    color: #475569;
+    font-weight: 500;
+  }
+  
+  .text-gray-900 {
+    color: #1e293b;
+    font-weight: 600;
+  }
+  
+  .w-4.h-4.text-sky-400 {
+    color: #0284c7;
+  }
+  
+  /* Add Meal Button */
+  button.bg-sky-600 {
+    background-color: #0284c7;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 16px rgba(2, 132, 199, 0.4);
+  }
+  
+  button.bg-sky-600:hover {
+    background-color: #0369a1;
+    transform: translateY(-2px);
+  }
+  

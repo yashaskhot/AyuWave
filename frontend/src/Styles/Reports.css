@@ -1,0 +1,98 @@
+.report-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 20px; /* Space between the grid items */
+  padding: 20px;
+}
+
+.report-container {
+  background-color: inherit; /* Matches the page background */
+  margin-bottom: 20px; /* Adds space between sections */
+}
+
+.report-list .list-group-item {
+  background-color: #f8f9fa; /* Adjust this color if needed */
+}
+
+
+.grid-item {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 248, 255, 0.7)); 
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 200px; /* Ensures the grid items look square */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.grid-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+h5 {
+  font-size: 1.4rem; /* Increased font size for the title */
+  color: #333; /* Darker color for the title */
+  text-align: center; /* Centered text */
+  margin-bottom: 10px;
+}
+
+.card-hover {
+  border: none; /* Remove the default border */
+  box-shadow: none; /* Remove default card shadow */
+  transition: all 0.3s ease; /* Smooth transition for card hover effect */
+}
+
+.card-hover:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevate card on hover */
+}
+
+h4 {
+  color: #007bff; /* Change color to primary theme */
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.9rem; /* Slightly larger font for units */
+  color: #555; /* Softer color for the unit */
+}
+
+/* Adjust for small screens */
+@media (max-width: 576px) {
+  .grid-item {
+    height: 150px; /* Adjust the height to keep items square on small screens */
+  }
+}
+
+.report-list {
+  background: hsla(0, 0%, 100%, 0.722); /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 14px; /* Padding for space inside */
+  margin-top: 10px; /* Space above the list */
+}
+
+.list-group-item {
+  background: #fff; /* White background for each item */
+  border: 5px solid #ddd; /* Light border for separation */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.2s ease; /* Smooth transition for hover */
+  padding: 9px; /* Increased padding for larger clickable area */
+  margin-bottom: 10px; 
+  margin-left: 8px;
+  
+}
+
+.list-group-item:hover {
+  background: #b5d4f3; /* Change background on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.badge {
+  background-color: #268d14; /* Badge color */
+  font-size: 0.9rem; /* Adjusted font size */
+}

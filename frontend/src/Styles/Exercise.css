@@ -1,0 +1,272 @@
+
+.app-container {
+  max-width: 430px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.greeting h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.greeting p {
+  color: #666;
+  font-size: 16px;
+}
+
+.featured-exercise {
+    background-color: #FFE8E8;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .featured-exercise:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); /* Deepened shadow on hover */
+  }
+  
+  .exercise-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+  
+  .featured-exercise:hover .exercise-info h3 {
+    color: #c44a4a; /* Darker red on hover for emphasis */
+  }
+  
+  .exercise-illustration .exercise-img {
+    max-width: 300px; /* Limit image size */
+    border-radius: 12px; /* Rounded corners for the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow under the image */
+    transition: transform 0.3s ease;
+  }
+  
+  .featured-exercise:hover .exercise-illustration .exercise-img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+
+.exercise-info {
+  flex: 1;
+}
+
+.exercise-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+.flow-video {
+    width: 50%; /* Ensure it fills the card width */
+    height: 100px; /* Set a fixed height for the video */
+    border-radius: 12px; /* Optional: to match the rounded corners */
+  }
+  
+.play-button {
+  background: none;
+  border: none;
+  color: #FF4B4B;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.exercise-illustration {
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.exercise-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+  
+  .flows-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .flows-section {
+    margin-bottom: 12px;
+    overflow: hidden; /* Ensure no overflow outside the container */
+  }
+  
+  .flow-cards {
+    display: flex; /* Change to flexbox for horizontal scrolling */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 16px; /* Space between cards */
+    padding: 10px 0; /* Padding for better appearance */
+    scroll-snap-type: x mandatory; /* Enable scroll snap for smoother scrolling */
+  }
+  
+  .flow-card {
+    flex: 0 0 auto; /* Allow cards to be fixed size */
+    width: 200px; /* Set a fixed width for each card */
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Align items centrally */
+    text-align: center; /* Center align text */
+    background-color: #f8f8f8; /* Light background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card */
+    scroll-snap-align: start; /* Snap to the start of each card */
+  }
+  
+  
+  .flow-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align image and content centrally */
+    gap: 5px;
+    height: 100%;
+    max-height: 100px;
+    margin-bottom: 5px;
+  }
+  
+  .flow-img {
+    width: 150px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .flow-info h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #333;
+  }
+  
+  .flow-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px; /* Add space below duration */
+  }
+
+  .flow-card:hover {
+    transform: translate(5px, 5px); 
+    box-shadow: 0px 12px 20px rgba(2, 79, 128, 0.176);
+  }
+  .progress-bar {
+    height: 4px;
+    background-color: #E0E0E0;
+    border-radius: 2px;
+    margin-top: 12px;
+  }
+  .continue-flows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  
+  .continue-flow-card {
+    background-color: #F8F8F8;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  .progress {
+    height: 100%;
+    background-color: #FF4B4B;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+  
+  /* Play button */
+  .play-button {
+    background: none;
+    border: none;
+    color: #FF4B4B;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 1px;
+  }
+  
+  .play-button:hover {
+    color: #e04040;
+  }
+    
+
+.continue-flows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.continue-flow-card {
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  padding: 1px;
+  justify-content: space-around;
+}
+
+.progress-bar {
+  height: 4px;
+  background-color: #E0E0E0;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #FF4B4B;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 360px) {
+
+  .flow-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .greeting h1 {
+    font-size: 20px;
+  }
+
+  .greeting p {
+    font-size: 14px;
+  }
+}

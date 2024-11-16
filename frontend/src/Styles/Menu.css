@@ -1,0 +1,12 @@
+.menutag{
+    font-weight: 500;
+    margin-right: 7px;
+    margin-top: 3px;
+    margin-left: 3px;
+    border: none;
+    border-bottom: 2px solid black;
+    
+}
+.menutag:hover{
+    text-decoration: underline;
+}

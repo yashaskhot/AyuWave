@@ -1,0 +1,34 @@
+/* UploadReport.css */
+
+.container {
+    /* background: linear-gradient(to bottom right, #f8f9fa, #e9ecef); */
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .btn-choose {
+    background-color: #007bff;
+  }
+  
+  .btn-reset {
+    background-color: #dc3545;
+  }
+  
+  input[type="text"] {
+    color: #333;
+  }
+  
+  .text-primary {
+    font-weight: bold;
+  }
+  
+  .image-section {
+    margin-top: 20px;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

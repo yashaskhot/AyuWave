@@ -1,0 +1,167 @@
+.navbar-section {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #d7faf9;
+}
+
+.navbar-title a {
+    color: #035aac;
+    letter-spacing: .6px;
+    text-decoration: none;
+}
+
+.navbar-title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-sign {
+    color: #5ff75f;
+    font-family: Cambria, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar-items > li {
+    list-style-type: none;
+}
+
+.navbar-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+.navbar-links:hover {
+    color: #dfab12;
+}
+
+.navbar-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.navbar-btn:hover {
+    color: #1A8EFD;
+    background-color: white;
+    border: 1px solid #1A8EFD;
+}
+
+/* Hamburger Icon */
+.mobile-nav {
+    display: none;
+}
+
+.hamb-icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.hamb-icon:hover {
+    color: #023261;
+}
+
+/* Mobile Navbar */
+.mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(to right, #087ea5, #FFFFFF); /* Gradient background */
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    transition: left .5s ease-in-out;
+}
+
+.mobile-navbar-close {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}
+
+.mobile-navbar-close .hamb-icon:hover {
+    color: rgb(255, 22, 22);
+}
+
+.open-nav {
+    left: 0;
+}
+
+.mobile-navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    gap: 24px;
+    text-align: center;
+    padding: 0;
+}
+
+.mobile-navbar-links li a {
+    text-decoration: none;
+    color: rgb(2, 32, 34);
+    font-weight: 600px;
+    font-size: 25px;
+    letter-spacing: .8px;
+    position: relative; /* Required for pseudo-element positioning */
+    transition: color .3s ease-in-out;
+}
+
+/* Pseudo-element for underline effect */
+.mobile-navbar-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Adjust based on desired distance from text */
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: #731541; /* Color of the underline */
+    transform: scaleX(0); /* Start as invisible */
+    transform-origin: left; /* Make it grow from the left */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* On hover, change text color and make underline visible */
+.mobile-navbar-links li a:hover {
+    color: #731541 !important; /* Color change on hover */
+}
+
+.mobile-navbar-links li a:hover::after {
+    transform: scaleX(1); /* Animate the underline to full width */
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .navbar-btn, .navbar-items {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+}

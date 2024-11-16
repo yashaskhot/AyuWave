@@ -1,0 +1,23 @@
+.card_1{
+    background-color: #fff;
+    border-radius: 25px;
+    margin:20px 5px;
+   
+}
+.card_1 h2{
+    font-size: 20px;
+}
+.cont{
+    justify-content: space-around;
+}
+.visit{
+    background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+.title{
+    background-color: rgb(228, 228, 228);
+    padding-top: 10px;
+
+}

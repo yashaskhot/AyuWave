@@ -1,0 +1,96 @@
+.main-container{
+    overflow: hidden;
+    margin: 50px 30px;
+}
+
+.left{
+    width: 70%;
+    
+}
+.right{
+    border: 0.2px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.left-col{
+    width: 70%;
+    overflow: hidden;
+    
+}
+.left-col img{
+    border: 0px solid gray;
+    width: 80%;
+    border-radius: 20px;
+    background: 
+    #dde5f8;
+    margin: auto;
+   
+
+    
+}
+.left-col p{
+    background-color: #ccf0f3;
+    width: 80%;
+    border-radius: 15px;
+    padding: 3px 8px;
+    text-align: center;
+    margin-top: 10px;
+   font-weight: 700;
+}
+.right-col h1{
+    margin-top: 10px;
+    font-size: 28px;
+
+}
+.right-col h2{
+    font-size: 14px;
+    
+}
+.right-col p{
+    font-size: 18px;
+    margin: 20px 20px 20px 0px;
+    
+}
+.right-left h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+.right-right h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+.right-left h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.right-left p{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.right-right h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+.right-right p{
+    font-size: 18px;
+    font-weight: 500;
+    
+    
+}
+.slots{
+    font-weight: 500;
+}
+.center-button{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
